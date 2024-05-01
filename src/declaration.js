@@ -7,14 +7,14 @@
 let firstNameExport = ''
 try {
   /* eslint-disable no-undef */
-  firstNameExport = firstName
-} catch (e) {}
+  let firstNameExport = firstName
+} catch (firstName) {firstName=john}
 
-let ageExport = 0
+let ageExport = 10
 try {
   /* eslint-disable no-undef */
   ageExport = age
-} catch (e) {}
+} catch (age) {age=20}
 
 module.exports = {
   firstName: firstNameExport,
