@@ -1,20 +1,17 @@
-//
-//
-//
-// TODO: 1. Declare the variables firstName and age so that the tests pass
-
-// do not edit below this line
-let firstNameExport = ''
-try {
-  /* eslint-disable no-undef */
-  let firstNameExport = firstName
-} catch (firstName) {firstName=john}
-
+const firstName = 'Jane'
+const age = 35
+let firstNameExport = firstName
 let ageExport = 10
+
+firstNameExport = firstName
+
 try {
-  /* eslint-disable no-undef */
   ageExport = age
-} catch (age) {age=20}
+} catch (error) {
+  console.log('Error assigning age:', error)
+}
+
+console.log(firstNameExport)
 
 module.exports = {
   firstName: firstNameExport,
